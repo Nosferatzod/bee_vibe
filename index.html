@@ -1,75 +1,88 @@
-<html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Bajoe</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="./css/style.css">
- </head>
- <body class="text-white">
-  <header class="flex justify-between items-center p-6">
-   <div class="flex items-center space-x-4">
-    <i class="fas fa-search text-xl"></i>
-    <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Search" type="text"/>
-   </div>
-   <nav class="flex space-x-8 header">
-    <a class="text-white" href="#">Home</a>
-    <a class="text-white" href="#">Shop</a>
-    <a class="text-white" href="#">Categories</a>
-    <h1 class="marca">Bajoe</h1> <!-- Aplicando a classe "marca" -->
-    <a class="text-white" href="#">Galleries</a>
-    <a class="text-white" href="#">Sales</a>
-    <a class="text-white" href="#">Blog</a>
-   </nav>
-   <div class="flex space-x-4">
-    <i class="fas fa-shopping-cart text-xl"></i>
-    <i class="fas fa-user-circle text-xl"></i>
-   </div>
-  </header>
+<html lang="pt-br">
 
-  <!-- Main Content -->
-  <main class="flex justify-between items-center p-6">
-   <div class="space-y-6">
-    <h1 class="text-6xl font-bold header">Style for every occasion</h1>
-    <p class="text-lg">Anything you looking for for your stylish appearance is here</p>
-    <div class="flex space-x-4">
-     <button class="bg-white text-black px-6 py-2 flex items-center">
-      Shop Now <i class="fas fa-arrow-right ml-2"></i>
-     </button>
-     <button class="border border-white px-6 py-2">Learn more</button>
-    </div>
-   </div>
-   <div class="relative flex flex-col space-y-4">
-    <div class="flex flex-col items-center">
-     <img alt="Formal style" class="w-48 h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/WjaZGLgqNRKhFFBVfe259luJn0kbrwr8XMRYzNfu5aSuPmknA.jpg"/>
-     <div class="flex items-center justify-between bg-black w-full p-4">
-      <span>Formal</span>
-      <div class="bg-white p-2">
-       <i class="fas fa-chevron-right text-black"></i>
-      </div>
-     </div>
-    </div>
-    <div class="flex flex-col items-center">
-     <img alt="Casual style" class="w-48 h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/9vo7S3C5xgLaEhFV6GDfcXCNJHTL7v30H3Ub5WH355UeHTyTA.jpg"/>
-     <div class="flex items-center justify-between bg-black w-full p-4">
-      <span>Casual</span>
-      <div class="bg-white p-2">
-       <i class="fas fa-chevron-right text-black"></i>
-      </div>
-     </div>
-    </div>
-    <div class="flex flex-col items-center">
-     <img alt="Semi-formal style" class="w-48 h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/CcYIOze5USTQH6a5N1bT7C8KY7xexNJnhpe7Lwl0a8fpfYSeE.jpg"/>
-     <div class="flex items-center justify-between bg-black w-full p-4">
-      <span>Semi</span>
-      <div class="bg-white p-2">
-       <i class="fas fa-chevron-right text-black"></i>
-      </div>
-     </div>
-    </div>
-   </div>
-  </main>
- </body>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" href="./image/icon_loja.png" type="image/png">
+    <title>BeeVibe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="text-white">
+    <header class="flex p-6">
+        <!-- Pesquisa e ícones à esquerda -->
+        <div class="flex items-center space-x-4">
+            <i class="fas fa-search text-xl"></i>
+            <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Pesquisar"
+                type="text" />
+        </div>
+        <!-- Menu de navegação com marca centralizada -->
+        <nav class="flex items-center space-x-8 mx-auto">
+            <a class="text-white" href="./index.html">Início</a>
+            <a class="text-white" href="./loja.html">Loja</a>
+            <a class="text-white" href="./categorias.html">Categorias</a>
+            <h1 class="marca">BeeVibe</h1> <!-- Centralizando o nome -->
+            <a class="text-white" href="./galeria.html">Galeria</a>
+            <a class="text-white" href="./promocao.html">Promoção</a>
+            <a class="text-white" href="./contato.html">Contato</a>
+        </nav>
+        <!-- Ícones à direita -->
+        <div class="flex space-x-4">
+            <i class="fas fa-shopping-cart text-xl"></i>
+            <i class="fas fa-user-circle text-xl"></i>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex justify-between items-center p-6">
+        <div class="space-y-6 ml-12">
+            <h1 class="text-8xl font-bold header"><span class="marcado">Estilo</span> para cada ocasião</h1>
+            <p class="text-lg subtitulo">Tudo o que você procura para sua aparência elegante está aqui!</p>
+            <div class="flex space-x-4">
+                <button class="bg-white text-black px-6 py-2 flex items-center">
+                    Compre agora <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+                <button class="veja border px-6 py-2">Veja mais</button>
+            </div>
+        </div>
+        <div class="relative-flex-column">
+            <div class="flex flex-col items-center">
+                <img alt="Formal style" class="w-48 h-48 object-cover"
+                    src="https://storage.googleapis.com/a1aa/image/WjaZGLgqNRKhFFBVfe259luJn0kbrwr8XMRYzNfu5aSuPmknA.jpg" />
+                <div class="categorias flex items-center justify-between w-full p-4">
+                    <span>Formal</span>
+                    <div class="bg-white p-2">
+                        <i class="fas fa-chevron-right text-black"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <img alt="Casual style" class="w-48 h-48 object-cover"
+                    src="https://storage.googleapis.com/a1aa/image/9vo7S3C5xgLaEhFV6GDfcXCNJHTL7v30H3Ub5WH355UeHTyTA.jpg" />
+                <div class="categorias flex items-center justify-between w-full p-4">
+                    <span>Casual</span>
+                    <div class="bg-white p-2">
+                        <i class="fas fa-chevron-right text-black"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <img alt="Semi-formal style" class="w-48 h-48 object-cover"
+                    src="https://storage.googleapis.com/a1aa/image/CcYIOze5USTQH6a5N1bT7C8KY7xexNJnhpe7Lwl0a8fpfYSeE.jpg" />
+                <div class="categorias flex items-center justify-between w-full p-4">
+                    <span>Semi</span>
+                    <div class="bg-white p-2">
+                        <i class="fas fa-chevron-right text-black"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
 </html>

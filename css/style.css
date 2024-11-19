@@ -1,16 +1,44 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #8B6F5E;
-  }
+  font-family: 'Roboto', sans-serif;
+  background-image: url('../image/fundo.png'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Faz com que a imagem cubra toda a tela */
+  background-position: center center; /* Centraliza a imagem */
+  background-attachment: fixed; /* A imagem fica fixa durante o scroll */
+  color: white; /* Cor do texto */
+  overflow: hidden;
+}
+
+.relative-flex-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transform: translateX(-40px); /* Move o conteúdo 30px para a esquerda */
+}
+
+.categorias {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+.categorias .bg-white {
+  padding: 0.5rem;
+}
+
+
   .header {
     font-family: 'Playfair Display', serif;
   }
   .marca {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem; /* Aumentando o tamanho */
+    font-size: 3rem; /* Tamanho maior */
     font-weight: 700;
-    color: #fff;
-  }
+    color: #203D15;
+    text-align: center; /* Centraliza o texto */
+    flex-grow: 1; /* Faz com que o elemento ocupe o espaço disponível */
+}
   /* Estilo para os links */
   nav a {
     color: white; /* Cor inicial dos links */
@@ -19,14 +47,30 @@ body {
   
   /* Efeito hover: cor mais escura */
   nav a:hover {
-    color: #7A5C46; /* Cor um pouco mais escura que o fundo */
+    color: #203d157a; /* Cor um pouco mais escura que o fundo */
   }
 
   /* Estilo para o botão */
   button {
+    background-color: #b7bcb54d;
     transition: background-color 0.3s ease, color 0.3s ease;
+    color: #203d15;
   }
   button:hover {
-    background-color: #7A5C46; /* Cor mais escura */
+    background-color: #b7bcb5; /* Cor mais escura */
     color: white;
+  }
+  .marcado {
+    color: #203D15;
+  }
+  .subtitulo{
+    color: #203D15;
+  }
+
+  .categorias{
+    background-color: #203D15;
+  }
+
+  .categorias:hover{
+    background-color: #203d15c4;
   }
