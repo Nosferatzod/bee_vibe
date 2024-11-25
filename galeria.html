@@ -7,44 +7,67 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/galeria.css">
 </head>
 <body class="text-white">
   <header class="flex p-6">
     <div class="flex items-center space-x-4">
-      <i class="fas fa-search text-xl"></i>
-      <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Pesquisar" type="text"/>
+        <i class="fas fa-search text-xl"></i>
+        <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Pesquisar"
+            type="text" />
     </div>
     <nav class="flex items-center space-x-8 mx-auto">
-      <a class="text-white" href="#">Início</a>
-      <a class="text-white" href="#">Loja</a>
-      <a class="text-white" href="#">Categorias</a>
-      <h1 class="marca">BeeVibe</h1>
-      <a class="text-white" href="#">Galeria</a>
-      <a class="text-white" href="#">Promoção</a>
-      <a class="text-white" href="#">Contato</a>
+        <a href="./index.html">Início</a>
+        <a href="./loja.html">Loja</a>
+        <a href="./categorias.html">Categorias</a>
+        <h1 class="marca">BeeVibe</h1>
+        <a href="./galeria.html">Galeria</a>
+        <a href="./promocao.html">Promoção</a>
+        <a href="./contato.html">Contato</a>
     </nav>
     <div class="flex space-x-4">
-      <i class="fas fa-shopping-cart text-xl"></i>
-      <i class="fas fa-user-circle text-xl"></i>
+        <i class="fas fa-shopping-cart text-xl"></i>
+        <i class="fas fa-user-circle text-xl"></i>
     </div>
   </header>
 
   <main class="p-6">
     <h1 class="text-4xl font-bold mb-6">Galeria de Estilos</h1>
-    <div class="grid grid-cols-3 gap-6">
-      <div class="bg-black p-4">
-        <img class="w-full h-56 object-cover" src="https://via.placeholder.com/300" alt="Estilo 1"/>
-        <h3 class="text-lg mt-4">Estilo 1</h3>
+    <div class="container mx-auto p-4">
+      <div class="grid grid-cols-4 gap-2">
+       <div class="col-span-2">
+        <img alt="Aerial view of a winding river through green fields" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/ekYYAtcyaEz9GK3vZPW1frYxT8arGXbZwVWI9A5jTFnC1o0TA.jpg" width="600"/>
+       </div>
+       <div class="col-span-1">
+        <img alt="Woman working on a laptop on a couch" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/Lv5EicEMyBZRA12ndyoMmhm3zcit7Xpl9adkJR7tcQBPNK9E.jpg" width="300"/>
+       </div>
+       <div class="col-span-1">
+        <img alt="Woman smiling in an office environment" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/x55BYBLvaE7eCaithq6akPowYO8dBYgznfJgTMRqObYfpRpnA.jpg" width="300"/>
+       </div>
+       <div class="col-span-1">
+        <img alt="Woman speaking on stage at an event" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/Lr8Ph7qBkdbcDZzVzMoHjxySzwF1j3pViiMV1DrxtdQNK9E.jpg" width="300"/>
+       </div>
+       <div class="col-span-1">
+        <img alt="Woman holding a phone and smiling" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/YxAWcbjAN5qQHx92fbGZO6JAGjx1e7lsW8vALUZYcw0I1o0TA.jpg" width="300"/>
+       </div>
+       <div class="col-span-1">
+        <img alt="Woman holding an award and smiling" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/pXLIkGKN84KgItniySxzcenOLtQhLtQu5WzkXVSf0eULqRpnA.jpg" width="300"/>
+       </div>
+       <div class="col-span-1">
+        <img alt="Group of people celebrating and smiling" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/IWt94CVbM1ZHKdDoLnlHDiuTw860qJ5Yfw7SW9mXfzeVqRpnA.jpg" width="300"/>
+       </div>
+       <div class="col-span-1">
+        <img alt="Woman speaking at a podium" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/yzOIfwDJIWwgaKkAGnfaYFuYsY1EDREoweiYwC89kKW9pRpnA.jpg" width="300"/>
+       </div>
+       <div class="col-span-1">
+        <img alt="Woman holding a balloon and smiling" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/Zkrek4u4Z0QrdicdTLNH7Jk5unKfWAGB5V9v5hLKRjUE1o0TA.jpg" width="300"/>
+       </div>
+       <div class="col-span-1">
+        <img alt="Woman holding a sign and smiling" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/RHJ8BXeQta1rHy0ZT3Bz2Yn1E4wN0V9Ui3IeeTYjyuVNqRpnA.jpg" width="300"/>
+       </div>
       </div>
-      <div class="bg-black p-4">
-        <img class="w-full h-56 object-cover" src="https://via.placeholder.com/300" alt="Estilo 2"/>
-        <h3 class="text-lg mt-4">Estilo 2</h3>
-      </div>
-      <div class="bg-black p-4">
-        <img class="w-full h-56 object-cover" src="https://via.placeholder.com/300" alt="Estilo 3"/>
-        <h3 class="text-lg mt-4">Estilo 3</h3>
-      </div>
+     </div>
+      <!-- Mais itens -->
     </div>
   </main>
 </body>
