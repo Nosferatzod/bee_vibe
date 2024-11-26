@@ -4,13 +4,12 @@ body {
   background-size: cover; /* Faz com que a imagem cubra toda a tela */
   background-position: center center; /* Centraliza a imagem */
   background-attachment: fixed; /* A imagem fica fixa durante o scroll */
-  color: white; /* Cor do texto */
   overflow: hidden;
 }
 
 
 nav a {
-  color: #0D0D0D;
+  color: #f4e2d7;
   font-size: 1rem;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -43,47 +42,54 @@ nav a {
   }
   .marca {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem; /* Tamanho maior */
+    font-size: 3rem; 
     font-weight: 700;
-    color: #203D15;
-    text-align: center; /* Centraliza o texto */
-    flex-grow: 1; /* Faz com que o elemento ocupe o espaço disponível */
+    color: #8C6249;
+    text-align: center; 
+    flex-grow: 1; 
 }
-  /* Estilo para os links */
+  
   nav a {
-    color: white; /* Cor inicial dos links */
-    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+    color: #baa79b; 
+    transition: color 0.3s ease; 
   }
   
-  /* Efeito hover: cor mais escura */
+
   nav a:hover {
-    color: #203d157a; /* Cor um pouco mais escura que o fundo */
+    color: #dfb0b0; 
   }
 
-  /* Estilo para o botão */
   button {
-    background-color: #b7bcb54d;
+    background-color: #c6cfc2a4;
     transition: background-color 0.3s ease, color 0.3s ease;
-    color: #203d15;
+    color: #8C6249;
+  }
+  .compre{
+    background-color: #8c6249d3;
   }
   button:hover {
-    background-color: #b7bcb5; /* Cor mais escura */
+    background-color: #8c624996; /* Cor mais escura */
     color: white;
   }
   .marcado {
-    color: #203D15;
+    color: #8C6249;
   }
   .subtitulo{
     color: #203D15;
   }
 
   .categorias{
-    background-color: #203D15;
+    background-color: #8C6249;
+    border-radius: 5%;
   }
 
   .categorias:hover{
-    background-color: #203d15c4;
+    transition: 0.3s;
+    background-color: #8c6249b9;
   }
 
+  .categoria_imagem{
+    border-radius: 5%;
+  }
   
 
