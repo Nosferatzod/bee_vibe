@@ -80,7 +80,6 @@ nav a {
 
   .categorias{
     background-color: #8C6249;
-    border-radius: 5%;
   }
 
   .categorias:hover{
@@ -88,8 +87,4 @@ nav a {
     background-color: #8c6249b9;
   }
 
-  .categoria_imagem{
-    border-radius: 5%;
-  }
-  
 
