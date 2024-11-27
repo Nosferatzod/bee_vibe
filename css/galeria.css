@@ -1,83 +1,140 @@
+/* Estilos para o body e elementos principais */
 body {
-    font-family: 'Playfair Display', serif;
-    background-image: url('../image/fundo.png');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    color: white;
-  }
-  
-  .zoom:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-   }
-  header {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .marca {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #203D15;
-    font-weight: 700;
-  }
-  
-  nav a {
-    color: white;
-    text-transform: uppercase;
-    padding: 0.5rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #203d157a;
-  }
-  
-  /* Estilos da galeria */
-  .galeria-item {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .galeria-item img {
-    transition: transform 0.3s ease;
-  }
-  
-  .galeria-item:hover img {
-    transform: scale(1.1); /* Zoom na imagem */
-  }
-  
-  h3 {
-    text-align: center;
-    color: #fff;
-  }
-  
-  /* Grid da galeria */
+  font-family: 'Playfair Display', serif;
+  background-image: url('../image/fundo_rosa.png');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+
+h1{
+  display: flex;
+  color: black;
+  justify-content: center;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marca {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem; 
+  font-weight: 700;
+  color: #8C6249;
+  text-align: center; 
+  flex-grow: 1; 
+}
+
+nav a {
+  color: #f4e2d7;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+nav a {
+  color: #baa79b; 
+  transition: color 0.3s ease; 
+}
+
+
+nav a:hover {
+  color: #dfb0b0; 
+}
+
+/* Estilos da galeria */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Zoom na imagem */
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+}
+
+/* Grid da galeria */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas para desktop */
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
   .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas para desktop */
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para tablets */
   }
-  
-  @media (max-width: 1024px) {
-    .grid {
-      grid-template-columns: repeat(3, 1fr); /* 3 colunas para tablets */
-    }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas menores */
   }
-  
-  @media (max-width: 768px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas menores */
-    }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* 1 coluna para dispositivos móveis */
   }
-  
-  @media (max-width: 480px) {
-    .grid {
-      grid-template-columns: 1fr; /* 1 coluna para dispositivos móveis */
-    }
-  }
-  
+}
+
+/* Configurações para o Lightbox */
+.simple-lightbox .sl-wrapper {
+  background-color: rgba(0, 0, 0, 0.9); /* Escurece o fundo */
+  z-index: 1000;
+  height: 100vh; /* Ocupar 100% da altura da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.simple-lightbox .sl-content {
+  width: 100%; /* Imagem ocupa toda a largura da tela */
+  height: 100%; /* Imagem ocupa toda a altura da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.simple-lightbox img {
+  object-fit: contain; /* Ajusta a imagem sem distorção */
+  width: 100%; /* A imagem ocupa 100% da largura */
+  height: 100%; /* A imagem ocupa 100% da altura */
+  margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* Esconder controles de navegação */
+.simple-lightbox .sl-nav {
+  display: none; /* Oculta as setas de navegação */
+}
+
+/* Estilizar o botão de fechamento */
+.simple-lightbox .sl-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+

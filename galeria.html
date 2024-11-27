@@ -8,13 +8,15 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="./css/galeria.css">
+  
+  <!-- Lightbox CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/simple-lightbox@2.4.0/dist/simple-lightbox.min.css" rel="stylesheet">
 </head>
 <body class="text-white">
   <header class="flex p-6">
     <div class="flex items-center space-x-4">
         <i class="fas fa-search text-xl"></i>
-        <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Pesquisar"
-            type="text" />
+        <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Pesquisar" type="text" />
     </div>
     <nav class="flex items-center space-x-8 mx-auto">
         <a href="./index.html">Início</a>
@@ -35,40 +37,37 @@
     <h1 class="text-4xl font-bold mb-6">Galeria de Estilos</h1>
     <div class="container mx-auto p-4">
       <div class="grid grid-cols-4 gap-2">
-       <div class="col-span-2">
-        <img alt="Aerial view of a winding river through green fields" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/ekYYAtcyaEz9GK3vZPW1frYxT8arGXbZwVWI9A5jTFnC1o0TA.jpg" width="600"/>
-       </div>
-       <div class="col-span-1">
-        <img alt="Woman working on a laptop on a couch" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/Lv5EicEMyBZRA12ndyoMmhm3zcit7Xpl9adkJR7tcQBPNK9E.jpg" width="300"/>
-       </div>
-       <div class="col-span-1">
-        <img alt="Woman smiling in an office environment" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/x55BYBLvaE7eCaithq6akPowYO8dBYgznfJgTMRqObYfpRpnA.jpg" width="300"/>
-       </div>
-       <div class="col-span-1">
-        <img alt="Woman speaking on stage at an event" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/Lr8Ph7qBkdbcDZzVzMoHjxySzwF1j3pViiMV1DrxtdQNK9E.jpg" width="300"/>
-       </div>
-       <div class="col-span-1">
-        <img alt="Woman holding a phone and smiling" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/YxAWcbjAN5qQHx92fbGZO6JAGjx1e7lsW8vALUZYcw0I1o0TA.jpg" width="300"/>
-       </div>
-       <div class="col-span-1">
-        <img alt="Woman holding an award and smiling" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/pXLIkGKN84KgItniySxzcenOLtQhLtQu5WzkXVSf0eULqRpnA.jpg" width="300"/>
-       </div>
-       <div class="col-span-1">
-        <img alt="Group of people celebrating and smiling" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/IWt94CVbM1ZHKdDoLnlHDiuTw860qJ5Yfw7SW9mXfzeVqRpnA.jpg" width="300"/>
-       </div>
-       <div class="col-span-1">
-        <img alt="Woman speaking at a podium" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/yzOIfwDJIWwgaKkAGnfaYFuYsY1EDREoweiYwC89kKW9pRpnA.jpg" width="300"/>
-       </div>
-       <div class="col-span-1">
-        <img alt="Woman holding a balloon and smiling" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/Zkrek4u4Z0QrdicdTLNH7Jk5unKfWAGB5V9v5hLKRjUE1o0TA.jpg" width="300"/>
-       </div>
-       <div class="col-span-1">
-        <img alt="Woman holding a sign and smiling" class="w-full h-full object-cover zoom" height="400" src="https://storage.googleapis.com/a1aa/image/RHJ8BXeQta1rHy0ZT3Bz2Yn1E4wN0V9Ui3IeeTYjyuVNqRpnA.jpg" width="300"/>
-       </div>
+        <!-- Imagens para a Galeria com links para Lightbox -->
+        <a href="./galeria/20.png" class="gallery-item">
+          <img alt="Aerial view of a winding river through green fields" class="w-full h-full object-cover zoom" height="400" src="./galeria/1.png" width="600"/>
+        </a>
+        <a href="./galeria/21.png" class="gallery-item">
+          <img alt="Woman speaking at a podium" class="w-full h-full object-cover zoom" height="400" src="./galeria/9.png" width="300"/>
+        </a>
+        <a href="./galeria/24.png" class="gallery-item">
+          <img alt="Woman smiling in an office environment" class="w-full h-full object-cover zoom" height="400" src="./galeria/3.png" width="300"/>
+        </a>
+        <a href="./galeria/23.png" class="gallery-item">
+          <img alt="Woman speaking on stage at an event" class="w-full h-full object-cover zoom" height="400" src="./galeria/4.png" width="300"/>
+        </a>
+        <a href="./galeria/22.png" class="gallery-item">
+          <img alt="Woman holding a phone and smiling" class="w-full h-full object-cover zoom" height="400" src="./galeria/5.png" width="300"/>
+        </a>
+        <a href="./galeria/21.png" class="gallery-item">
+          <img alt="Group of people celebrating and smiling" class="w-full h-full object-cover zoom" height="400" src="./galeria/7.png" width="300"/>
+        </a>
+        <a href="./galeria/20.png" class="gallery-item">
+          <img alt="Woman working on a laptop on a couch" class="w-full h-full object-cover zoom" height="400" src="./galeria/2.png" width="300"/>
+        </a>
+        <a href="./galeria/21.png" class="gallery-item">
+          <img alt="Woman speaking at a podium" class="w-full h-full object-cover zoom" height="400" src="./galeria/8.png" width="300"/>
+        </a>
       </div>
-     </div>
-      <!-- Mais itens -->
     </div>
   </main>
+
+  <!-- Lightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/simple-lightbox@2.4.0/dist/simple-lightbox.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
