@@ -3,11 +3,12 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <link rel="icon" href="./image/icon_loja.png" type="image/png">
-  <title>BeeVibe - Categorias</title>
+  <title>BeeVibe - Loja</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/loja.css">
+  <script src="./js/script.js"></script>
 </head>
 <body class="text-white">
   <header class="flex p-6">
@@ -22,7 +23,7 @@
         <a href="./index.html">Início</a>
         <a href="./loja.html">Loja</a>
         <a href="./categorias.html">Categorias</a>
-        <h1 class="marca">BeeVibe</h1> <!-- Centralizando o nome -->
+        <a class="marca" href="./index.html">BeeVibe</a> <!-- Centralizando o nome -->
         <a href="./galeria.html">Galeria</a>
         <a href="./promocao.html">Promoção</a>
         <a href="./contato.html">Contato</a>
@@ -34,25 +35,39 @@
     </div>
 </header>
 
+  <!-- Conteúdo da loja -->
   <main class="p-6">
-    <h1 class="text-4xl font-bold mb-6">Categorias</h1>
-    <div class="grid grid-cols-3 gap-6">
-      <div class="bg-black p-4">
-        <img class="w-full h-56 object-cover" src="https://via.placeholder.com/300" alt="Categoria 1"/>
-        <h3 class="text-lg mt-4">Categoria 1</h3>
-        <button class="bg-white text-black mt-4 px-6 py-2">Ver produtos</button>
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+       <!-- VESTIDOS -->
+       <div class="relative zoom-container">
+        <img alt="Woman sitting on a bench wearing a blue dress with a yellow scarf" class="w-full h-full object-cover" height="800" src="./image/formal_banner.png" width="600"/>
+        <div class="absolute inset-0 flex items-center justify-center">
+         <span class="text-white text-2xl font-bold highlight-text">
+          FORMAL
+         </span>
+        </div>
+       </div>
+       <!-- SEDA -->
+       <div class="relative zoom-container">
+        <img alt="Woman standing near the sea wearing a colorful silk dress" class="w-full h-full object-cover" height="800" src="./image/casual_banner.jpg" width="600"/>
+        <div class="absolute inset-0 flex items-center justify-center">
+         <span class="text-white text-2xl font-bold highlight-text">
+          CASUAL
+         </span>
+        </div>
+       </div>
+       <!-- ACESSÓRIOS -->
+       <div class="relative zoom-container">
+        <img alt="Woman standing near the sea wearing a white t-shirt with 'I love Capri' text and blue shorts" class="w-full h-full object-cover" height="800" src="./image/semi_banner.jpg" width="600"/>
+        <div class="absolute inset-0 flex items-center justify-center">
+         <span class="text-white text-2xl font-bold highlight-text">
+          SEMI
+         </span>
+        </div>
+       </div>
       </div>
-      <div class="bg-black p-4">
-        <img class="w-full h-56 object-cover" src="https://via.placeholder.com/300" alt="Categoria 2"/>
-        <h3 class="text-lg mt-4">Categoria 2</h3>
-        <button class="bg-white text-black mt-4 px-6 py-2">Ver produtos</button>
-      </div>
-      <div class="bg-black p-4">
-        <img class="w-full h-56 object-cover" src="https://via.placeholder.com/300" alt="Categoria 3"/>
-        <h3 class="text-lg mt-4">Categoria 3</h3>
-        <button class="bg-white text-black mt-4 px-6 py-2">Ver produtos</button>
-      </div>
-    </div>
+     </div>
   </main>
 </body>
 </html>

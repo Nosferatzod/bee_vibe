@@ -7,3 +7,15 @@ var gallery = new SimpleLightbox('.gallery-item a', {
     enableKeyboard: true, // Habilitar navegação com o teclado
     closeText: 'X', // Personalizar texto de fechamento
 });
+
+
+// script.js - Para melhorias adicionais
+document.querySelectorAll('.group').forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.querySelector('img').style.transform = 'scale(1.1)';
+    });
+    item.addEventListener('mouseout', () => {
+        item.querySelector('img').style.transform = 'scale(1)';
+    });
+});
+
