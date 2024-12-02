@@ -7,6 +7,11 @@ body {
   background-attachment: fixed;
 }
 
+.fas {
+  color: #73513D;
+  display: flex;
+  align-items: center;
+}
 
 h1{
   display: flex;

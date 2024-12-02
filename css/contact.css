@@ -1,0 +1,168 @@
+/* Estilos gerais */
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: url('../image/fundo_contact.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Estilos do cabeçalho */
+header {
+    display: flex;
+    padding: 20px;
+    color: #fff;
+}
+
+.marca {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #8C6249;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Estilos do menu de navegação */
+nav a {
+    color: #baa79b;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #dfb0b0;
+}
+
+/* Estilos do formulário de contato */
+.max-w-2xl {
+    max-width: 40rem;
+}
+
+.bg-opacity-50 {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.rounded-lg {
+    border-radius: 1rem;
+}
+
+.shadow-lg {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.space-y-4 > * + * {
+    margin-top: 1.5rem;
+}
+
+/* Estilos do formulário */
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0.375rem;
+    color: #fff;
+}
+
+input:focus, textarea:focus {
+    border-color: #8C6249;
+    outline: none;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+/* Estilo do botão de envio */
+button {
+    background-color: #ffffffcc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #8C6249;
+    padding: 1rem 2rem;
+    border-radius: 0.375rem;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #8c624996; /* Cor mais escura */
+    color: #ffffff;
+}
+
+/* Estilos da área de contato */
+.main-container {
+    padding: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Estilos para os campos de entrada */
+input[type="text"], input[type="email"], textarea {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0.375rem;
+    padding: 1rem;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #8C6249;
+    outline: none;
+}
+
+/* Adicionando sombra e arredondamento ao formulário */
+form {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+    .main-container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Estilos para o botão */
+button {
+    background-color: #8C6249;
+    color: white;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: #5a3a2e;
+}

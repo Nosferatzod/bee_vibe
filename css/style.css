@@ -3,10 +3,21 @@ body {
   background-image: url('../image/fundo.png'); /* Substitua pelo caminho da sua imagem */
   background-size: cover; /* Faz com que a imagem cubra toda a tela */
   background-position: center center; /* Centraliza a imagem */
-  background-attachment: fixed; /* A imagem fica fixa durante o scroll */
+  background-attachment: fixed;
   overflow: hidden;
 }
+veja{
+  color: #8C6249;
+}
+.para_cada{
+  color: white;
+}
 
+.fas {
+  color: #73513D;
+  display: flex;
+  align-items: center;
+}
 
 nav a {
   color: #f4e2d7;
@@ -36,7 +47,6 @@ nav a {
   padding: 0.5rem;
 }
 
-
   .header {
     font-family: 'Playfair Display', serif;
   }
@@ -60,7 +70,7 @@ nav a {
   }
 
   button {
-    background-color: #c6cfc2a4;
+    background-color: #ffffffcc;
     transition: background-color 0.3s ease, color 0.3s ease;
     color: #8C6249;
   }
@@ -69,7 +79,7 @@ nav a {
   }
   button:hover {
     background-color: #8c624996; /* Cor mais escura */
-    color: white;
+    color: #ffffff;
   }
   .marcado {
     color: #8C6249;
@@ -79,6 +89,7 @@ nav a {
   }
 
   .categorias{
+    border-radius: 2%;
     background-color: #8C6249;
   }
 
@@ -87,4 +98,7 @@ nav a {
     background-color: #8c6249b9;
   }
 
+  .categoria_imagem{
+    border-radius: 2%;
+  }
 

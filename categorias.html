@@ -29,9 +29,11 @@
         <a href="./contato.html">Contato</a>
     </nav>
     <!-- Ícones à direita -->
-    <div class="flex space-x-4">
-        <i class="fas fa-shopping-cart text-xl"></i>
-        <i class="fas fa-user-circle text-xl"></i>
+    <div id="cart-icon" class="relative flex space-x-4">
+      <a href="#" class="fas fa-shopping-cart text-xl" id="cart-toggle">
+        <span id="cart-counter">0</span>
+      </a>
+      <a href="" class="fas fa-user-circle text-xl"></a>
     </div>
 </header>
 
@@ -41,9 +43,9 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
        <!-- VESTIDOS -->
        <div class="relative zoom-container">
-        <img alt="Woman sitting on a bench wearing a blue dress with a yellow scarf" class="w-full h-full object-cover" height="800" src="./image/formal_banner.png" width="600"/>
+        <img alt="Woman sitting on a bench wearing a blue dress with a yellow scarf" class="w-full h-full object-cover" height="800" src="./galeria/formal_menina.jpg" width="600"/>
         <div class="absolute inset-0 flex items-center justify-center">
-         <span class="text-white text-2xl font-bold highlight-text">
+         <span class="categorias_box text-2xl font-bold highlight-text">
           FORMAL
          </span>
         </div>
@@ -52,7 +54,7 @@
        <div class="relative zoom-container">
         <img alt="Woman standing near the sea wearing a colorful silk dress" class="w-full h-full object-cover" height="800" src="./image/casual_banner.jpg" width="600"/>
         <div class="absolute inset-0 flex items-center justify-center">
-         <span class="text-white text-2xl font-bold highlight-text">
+         <span class="categorias_box text-2xl font-bold highlight-text">
           CASUAL
          </span>
         </div>
@@ -61,7 +63,7 @@
        <div class="relative zoom-container">
         <img alt="Woman standing near the sea wearing a white t-shirt with 'I love Capri' text and blue shorts" class="w-full h-full object-cover" height="800" src="./image/semi_banner.jpg" width="600"/>
         <div class="absolute inset-0 flex items-center justify-center">
-         <span class="text-white text-2xl font-bold highlight-text">
+         <span class="categorias_box text-2xl font-bold highlight-text">
           SEMI
          </span>
         </div>

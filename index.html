@@ -13,14 +13,13 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="text-white">
+<body>
     <header class="flex p-6">
         <!-- Pesquisa e ícones à esquerda -->
         <div class="flex items-center space-x-4">
             <i class="fas fa-search text-xl"></i>
-            <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Pesquisar"
-                type="text" />
-        </div>
+            <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Pesquisar" type="text" />
+          </div>
         <!-- Menu de navegação com marca centralizada -->
         <nav class="flex items-center space-x-8 mx-auto">
             <a href="./index.html">Início</a>
@@ -32,16 +31,18 @@
             <a href="./contato.html">Contato</a>
         </nav>
         <!-- Ícones à direita -->
-        <div class="flex space-x-4">
-            <i class="fas fa-shopping-cart text-xl"></i>
-            <i class="fas fa-user-circle text-xl"></i>
-        </div>
+        <div id="cart-icon" class="relative flex space-x-4">
+            <a href="#" class="fas fa-shopping-cart text-xl" id="cart-toggle">
+              <span id="cart-counter">0</span>
+            </a>
+            <a href="" class="fas fa-user-circle text-xl"></a>
+          </div>
     </header>
 
     <!-- Main Content -->
     <main class="flex justify-between items-center p-6">
         <div class="space-y-6 ml-12">
-            <h1 class="text-8xl font-bold header"><span class="marcado">Estilo</span> para cada ocasião</h1>
+            <h1 class="para_cada text-8xl font-bold header"><span class="marcado">Estilo</span> para cada ocasião</h1>
             <p class="text-lg subtitulo">Tudo o que você procura para sua aparência elegante está aqui!</p>
             <div class="flex space-x-4">
                 <button class="compre text-black px-6 py-2 flex items-center">

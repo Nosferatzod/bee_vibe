@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8"/>
@@ -8,7 +9,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="./css/loja.css">
-  <script src="./js/script.js"></script>
+  <script src="./js/script.js" defer></script>
 </head>
 <body class="text-white">
   <header class="flex p-6">
@@ -29,35 +30,36 @@
         <a href="./contato.html">Contato</a>
     </nav>
     <!-- Ícones à direita -->
-    <div class="flex space-x-4">
-        <i class="fas fa-shopping-cart text-xl"></i>
-        <i class="fas fa-user-circle text-xl"></i>
-    </div>
+    <div id="cart-icon" class="relative flex space-x-4">
+        <a href="#" class="fas fa-shopping-cart text-xl" id="cart-toggle">
+          <span id="cart-counter">0</span>
+        </a>
+        <a href="" class="fas fa-user-circle text-xl"></a>
+      </div>
 </header>
 
   <!-- Banner de topo -->
   <section id="carrossel">
     <div class="slider">
-        <div class="slides">
-            <img src="./image/banner01.png" alt="Banner 1" class="active">
-        </div>
+      <div class="slides">
+        <img src="./image/banner01.png" alt="Banner 1" class="active">
+      </div>
     </div>
-</section>
-
-
+  </section>
 
   <!-- Conteúdo da loja -->
   <main class="p-6">
     <h2 class="text-4xl font-bold mb-6 text-center">Produtos em Destaque</h2>
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid grid-cols-3 gap-6" id="product-list">
+      <!-- Cards de produto -->
       <div class="product-card">
         <img class="product-image" src="./image/camisa_linho.png" alt="Produto 1"/>
         <div class="product-info">
           <h3 class="product-title">Camisa de Linho Masculina, Casual Manga Comprida</h3>
-          <p class="product-description">A camisa de linho masculina casual garante frescor e leveza ao look, perfeita para o dia a dia essa peça de roupa pode ser usada em diversas ocasiões.</p>
+          <p class="product-description">A camisa de linho masculina casual garante frescor e leveza ao look, perfeita para o dia a dia.</p>
           <div class="product-footer">
             <span class="product-price">R$ 99,99</span>
-            <button class="buy-button">Comprar</button>
+            <button class="buy-button add-to-cart" data-id="1">Comprar</button>
           </div>
         </div>
       </div>
@@ -68,7 +70,7 @@
           <p class="product-description">Desenhado para valorizar a silhueta feminina, ele é a escolha perfeita para adicionar um toque refinado ao seu estilo.</p>
           <div class="product-footer">
             <span class="product-price">R$ 129,99</span>
-            <button class="buy-button">Comprar</button>
+            <button class="buy-button add-to-cart" data-id="1">Comprar</button>
           </div>
         </div>
       </div>
@@ -79,11 +81,19 @@
           <p class="product-description">Uma peça prática e elegante, combinando conforto e sofisticação da alfaiataria.</p>
           <div class="product-footer">
             <span class="product-price">R$ 159,99</span>
-            <button class="buy-button">Comprar</button>
+            <button class="buy-button add-to-cart" data-id="1">Comprar</button>
           </div>
         </div>
       </div>
     </div>
   </main>
+
+  <!-- Carrinho -->
+  <div id="cart" class="fixed top-20 right-6 w-80 p-4 bg-white shadow-lg rounded-lg hidden">
+    <h3 class="font-bold text-xl mb-4">Carrinho</h3>
+    <ul id="cart-items" class="list-none"></ul>
+    <button id="checkout" class="bg-green-600 text-white py-2 px-4 rounded mt-4 w-full">Finalizar Compra</button>
+    <button id="close-cart" class="mt-2 w-full text-red-600">Fechar</button>
+  </div>
 </body>
 </html>

@@ -7,50 +7,52 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contact.css">
 </head>
-<body class="text-white">
+<body>
   <header class="flex p-6">
-    <!-- Pesquisa e ícones à esquerda -->
     <div class="flex items-center space-x-4">
-        <i class="fas fa-search text-xl"></i>
-        <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Pesquisar"
-            type="text" />
+      <i class="fas fa-search text-xl"></i>
+      <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Pesquisar" type="text" />
     </div>
-    <!-- Menu de navegação com marca centralizada -->
     <nav class="flex items-center space-x-8 mx-auto">
-        <a href="./index.html">Início</a>
-        <a href="./loja.html">Loja</a>
-        <a href="./categorias.html">Categorias</a>
-        <a class="marca" href="./index.html">BeeVibe</a> <!-- Centralizando o nome -->
-        <a href="./galeria.html">Galeria</a>
-        <a href="./promocao.html">Promoção</a>
-        <a href="./contato.html">Contato</a>
+      <a href="./index.html">Início</a>
+      <a href="./loja.html">Loja</a>
+      <a href="./categorias.html">Categorias</a>
+      <a class="marca" href="./index.html">BeeVibe</a>
+      <a href="./galeria.html">Galeria</a>
+      <a href="./promocao.html">Promoção</a>
+      <a href="./contato.html">Contato</a>
     </nav>
-    <!-- Ícones à direita -->
-    <div class="flex space-x-4">
-        <i class="fas fa-shopping-cart text-xl"></i>
-        <i class="fas fa-user-circle text-xl"></i>
+    <div id="cart-icon" class="relative flex space-x-4">
+      <a href="#" class="fas fa-shopping-cart text-xl" id="cart-toggle">
+        <span id="cart-counter">0</span>
+      </a>
+      <a href="" class="fas fa-user-circle text-xl"></a>
     </div>
-</header>
+  </header>
 
   <main class="p-6">
     <h1 class="text-4xl font-bold mb-6">Fale Conosco</h1>
-    <form>
-      <div class="mb-4">
-        <label class="block">Nome</label>
-        <input class="w-full p-3 bg-transparent border border-white" type="text" placeholder="Seu nome"/>
-      </div>
-      <div class="mb-4">
-        <label class="block">Email</label>
-        <input class="w-full p-3 bg-transparent border border-white" type="email" placeholder="Seu email"/>
-      </div>
-      <div class="mb-4">
-        <label class="block">Mensagem</label>
-        <textarea class="w-full p-3 bg-transparent border border-white" placeholder="Sua mensagem"></textarea>
-      </div>
-      <button class="bg-white text-black px-6 py-2">Enviar</button>
-    </form>
+    <!-- Caixa de Contato -->
+    <div class="max-w-2xl mx-auto p-8 bg-opacity-50 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-semibold mb-6 text-center text-black">Estamos aqui para ajudar!</h2>
+      <form class="space-y-4">
+        <div class="mb-4">
+          <label class="block text-black" for="name">Nome</label>
+          <input class="w-full p-3 bg-transparent border border-white rounded-md" id="name" type="text" placeholder="Seu nome"/>
+        </div>
+        <div class="mb-4">
+          <label class="block text-black" for="email">Email</label>
+          <input class="w-full p-3 bg-transparent border border-white rounded-md" id="email" type="email" placeholder="Seu email"/>
+        </div>
+        <div class="mb-4">
+          <label class="block text-black" for="message">Mensagem</label>
+          <textarea class="w-full p-3 bg-transparent border border-white rounded-md" id="message" placeholder="Sua mensagem"></textarea>
+        </div>
+        <button class="w-full bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition duration-300">Enviar</button>
+      </form>
+    </div>
   </main>
 </body>
 </html>
