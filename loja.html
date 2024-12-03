@@ -13,30 +13,34 @@
 </head>
 <body class="text-white">
   <header class="flex p-6">
-    <!-- Pesquisa e ícones à esquerda -->
     <div class="flex items-center space-x-4">
-        <i class="fas fa-search text-xl"></i>
-        <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Pesquisar"
-            type="text" />
+      <i class="fas fa-search text-xl"></i>
+      <input class="bg-transparent border-b border-white focus:outline-none" placeholder="Pesquisar" type="text" />
     </div>
-    <!-- Menu de navegação com marca centralizada -->
-    <nav class="flex items-center space-x-8 mx-auto">
-        <a href="./index.html">Início</a>
-        <a href="./loja.html">Loja</a>
-        <a href="./categorias.html">Categorias</a>
-        <a class="marca" href="./index.html">BeeVibe</a> <!-- Centralizando o nome -->
-        <a href="./galeria.html">Galeria</a>
-        <a href="./promocao.html">Promoção</a>
-        <a href="./contato.html">Contato</a>
+    <nav id="menu-mobile" class="flex items-center space-x-8 mx-auto lg:flex hidden">
+      <a href="./index.html">Início</a>
+      <a href="./loja.html">Loja</a>
+      <a href="./categorias.html">Categorias</a>
+      <a class="marca" href="./index.html">BeeVibe</a>
+      <a href="./galeria.html">Galeria</a>
+      <a href="./promocao.html">Promoção</a>
+      <a href="./contato.html">Contato</a>
     </nav>
-    <!-- Ícones à direita -->
+    <!-- Ícone do menu hamburguer -->
+    <div id="hamburger-icon" class="lg:hidden flex flex-col space-y-2 cursor-pointer">
+      <span class="w-6 h-1 bg-black"></span>
+      <span class="w-6 h-1 bg-black"></span>
+      <span class="w-6 h-1 bg-black"></span>
+    </div>
+    <!-- Carrinho -->
     <div id="cart-icon" class="relative flex space-x-4">
-        <a href="#" class="fas fa-shopping-cart text-xl" id="cart-toggle">
-          <span id="cart-counter">0</span>
-        </a>
-        <a href="" class="fas fa-user-circle text-xl"></a>
-      </div>
-</header>
+      <a href="#" class="fas fa-shopping-cart text-xl" id="cart-toggle">
+        <span id="cart-counter">0</span>
+      </a>
+      <a href="" class="fas fa-user-circle text-xl"></a>
+    </div>
+  </header>
+  
 
   <!-- Banner de topo -->
   <section id="carrossel">
@@ -70,7 +74,7 @@
           <p class="product-description">Desenhado para valorizar a silhueta feminina, ele é a escolha perfeita para adicionar um toque refinado ao seu estilo.</p>
           <div class="product-footer">
             <span class="product-price">R$ 129,99</span>
-            <button class="buy-button add-to-cart" data-id="1">Comprar</button>
+            <button class="buy-button add-to-cart" data-id="2">Comprar</button>
           </div>
         </div>
       </div>
@@ -81,7 +85,7 @@
           <p class="product-description">Uma peça prática e elegante, combinando conforto e sofisticação da alfaiataria.</p>
           <div class="product-footer">
             <span class="product-price">R$ 159,99</span>
-            <button class="buy-button add-to-cart" data-id="1">Comprar</button>
+            <button class="buy-button add-to-cart" data-id="3">Comprar</button>
           </div>
         </div>
       </div>
