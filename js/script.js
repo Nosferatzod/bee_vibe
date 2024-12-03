@@ -1,3 +1,7 @@
+function toggleMenu() {
+    const menu = document.getElementById('menu-mobile');
+    menu.classList.toggle('hidden'); // Alterna a classe 'hidden' para mostrar/ocultar o menu
+}
 var gallery = new SimpleLightbox('.gallery-item a', {
     nav: true, // Habilitar navegação entre imagens
     close: true, // Habilitar botão de fechar
@@ -18,8 +22,7 @@ document.querySelectorAll('.group').forEach(item => {
 });
 // Lista de produtos (incluindo preços como números)
 // Lista de produtos (incluindo preços como números)
-const products = [
-    {
+const products = [{
         id: 1,
         name: 'Camisa de Linho Masculina, Casual Manga Comprida',
         price: 99.99, // Preço em número
@@ -57,9 +60,12 @@ function addToCart(productId) {
     } else {
         // Se não existe no carrinho, pega o produto da lista e adiciona
         const product = products.find(item => item.id === productId);
-        cart.push({...product, quantity: 1});
+        cart.push({
+            ...product,
+            quantity: 1
+        });
     }
-    
+
     // Atualiza o contador
     updateCartCounter();
 

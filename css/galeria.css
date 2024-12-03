@@ -40,7 +40,7 @@ header {
 }
 
 nav a {
-  color: #f4e2d7;
+  color: #73513D;
   font-size: 1rem;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -48,15 +48,8 @@ nav a {
   transition: color 0.3s ease;
 }
 
-
-nav a {
-  color: #baa79b; 
-  transition: color 0.3s ease; 
-}
-
-
 nav a:hover {
-  color: #dfb0b0; 
+  color: #A6806A;
 }
 
 /* Estilos da galeria */

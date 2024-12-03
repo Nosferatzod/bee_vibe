@@ -27,17 +27,17 @@ header {
 
 /* Estilos do menu de navegação */
 nav a {
-    color: #baa79b;
+    color: #73513D;
     font-size: 1rem;
     text-transform: uppercase;
     padding: 0.5rem;
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #dfb0b0;
-}
+  }
+  
+  nav a:hover {
+    color: #A6806A;
+  }
 
 /* Estilos do formulário de contato */
 .max-w-2xl {

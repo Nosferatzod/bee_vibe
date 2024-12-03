@@ -45,14 +45,18 @@ button:hover {
 }
 
   
-  nav a {
-    color: #f4e2d7;
-    font-size: 1rem;
-    text-transform: uppercase;
-    padding: 0.5rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
+nav a {
+  color: #73513D;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #A6806A;
+}
   
   .relative-flex-column {
     position: relative;
@@ -85,16 +89,6 @@ button:hover {
       text-align: center; 
       flex-grow: 1; 
   }
-    
-    nav a {
-      color: #baa79b; 
-      transition: color 0.3s ease; 
-    }
-    
-  
-    nav a:hover {
-      color: #dfb0b0; 
-    }
   
     button {
       background-color: #c6cfc2a4;
